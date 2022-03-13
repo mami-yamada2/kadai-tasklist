@@ -11,8 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tasks")
-
-public class Message {
+public class Task {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,6 +22,7 @@ public class Message {
 
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
+
 
     @Column(name = "content", length = 255, nullable = false)
     private String content;
@@ -53,7 +53,7 @@ public class Message {
     }
 
     public String getContent() {
-        return content;
+        return content = content;
     }
 
     public void setContent(String content) {
