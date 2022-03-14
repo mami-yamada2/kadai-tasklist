@@ -62,7 +62,7 @@ public class Task {
     }
 
     public String getContent() {
-        return content = content;
+        return content;
     }
 
     public void setContent(String content) {
